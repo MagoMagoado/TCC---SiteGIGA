@@ -1,0 +1,293 @@
+/*Tamanho de tablets em paisagem*/
+/*min-width -> tudo que for maior que...*/
+@media screen and (max-width: 1024px) and (min-width: 768px) and 
+(orientation:landscape)
+{
+    
+}
+
+/*Tamanho de tablets em paisagem*/
+@media screen and (max-width: 600px) and 
+(orientation:landscape)
+{
+}
+@media screen and (max-width: 860px)
+{
+    #carousel-2 > .swiper-wrapper > .swiper-slide > span.one{
+       font-size: 1.5rem;
+    }
+    #carousel-2 > .swiper-wrapper > .swiper-slide > span.two{
+        font-size: 1.4rem;
+    }
+}
+@media screen and (max-width: 768px)
+{
+    #mini-propaganda > ul{
+        width: 580px;
+    }
+    #mini-propaganda > ul > :nth-child(1){
+        height: 100px;
+    }
+    #mini-propaganda > ul > :nth-child(2){
+        height: 200px;
+    }
+    #mini-propaganda > ul > :nth-child(3) > img{
+        width: 200px; height: 200px;
+    }
+    #mini-propaganda > ul > :nth-child(3) > p{
+        font-size: 2.5rem;
+    }
+    #mini-propaganda > ul > :nth-child(3) > p > span{
+        font-size: 3.2rem;
+    }
+    .tab .tablinks{
+        font-size: 1rem;
+        padding: 12px 13px;
+    }
+    .tabcontent{
+        width: 473px;
+    }
+    .swiper-slide > span{
+        font-size: 2rem;
+    }
+
+    #titEventos > h1{
+        padding: 0px 4vw;
+        font-size: 2.3rem;
+    }
+    #eventos > #centro{
+        width: 85%;
+    }
+    #carousel-2 {
+        width: 98%;
+        height: 38vh;
+    }
+    #carousel-2 > .swiper-wrapper > .swiper-slide > span.one{
+        font-size: 1.4rem;
+     }
+     #carousel-2 > .swiper-wrapper > .swiper-slide > span.two{
+         font-size: 1.3rem;
+     }
+}
+
+@media screen and (max-width: 600px)
+{
+    #mini-propaganda > ul{
+        width: 470px;
+    }
+    #mini-propaganda > ul > :nth-child(1){
+        height: 80px;
+    }
+    #mini-propaganda > ul > :nth-child(2){
+        height: 160px;
+    }
+    #mini-propaganda > ul > :nth-child(3){
+        margin-top: 40px;
+    }
+    #mini-propaganda > ul > :nth-child(3) > img{
+        width: 160px; height: 170px;
+    }
+    #mini-propaganda > ul > :nth-child(3) > p{
+        font-size: 2.2rem;
+    }
+    #mini-propaganda > ul > :nth-child(3) > p > span{
+        font-size: 3rem;
+    }
+    #carousel-1{
+        margin: 8vh 0px 15vh 0px;
+    }
+    .tab .tablinks{
+        font-size: 1rem;
+        padding: 8px 10px;
+    }
+    .active{
+        border-right: inset 3px #ff0000;
+    }
+    .tabcontent{
+        width: 366px;
+    }
+    .swiper-slide > span{
+        font-size: 1.5rem;
+    }
+
+    #titEventos > h1{
+        padding: 0px 3vw;
+        font-size: 2rem;
+    }
+    #eventos > #centro{
+        width: 83%;
+    }
+    #carousel-2 {
+        width: 96%;
+        height: 28vh;
+    }
+    #carousel-2 > .swiper-wrapper > .swiper-slide > span.one{
+        font-size: 1rem;
+     }
+     #carousel-2 > .swiper-wrapper > .swiper-slide > span.two{
+         font-size: 1rem;
+     }
+    #carousel-1 [class^="swiper-button-"]{
+        background-color: transparent;
+        box-shadow: none;
+    }
+    #carousel-1 .swiper-container:hover .swiper-button-prev,
+    #carousel-1 .swiper-container:hover .swiper-button-next {
+        background-color: transparent;
+        box-shadow: none;
+    }
+    #carousel-2 [class^="swiper-button-"] {
+        transform: scale(.8);
+    }
+}
+
+@media screen and (max-width: 480px)
+{
+    #mini-propaganda > ul{
+        width: 420px;
+    }
+    #mini-propaganda > ul > :nth-child(1){
+        height: 100px;
+    }
+    #mini-propaganda > ul > :nth-child(2){
+        height: 120px;
+    }
+    #mini-propaganda > ul > :nth-child(3){
+        margin-top: 25px;
+    }
+    #mini-propaganda > ul > :nth-child(3) > img{
+        width: 150px; height: 150px;
+    }
+    #mini-propaganda > ul > :nth-child(3) > p{
+        font-size: 1.8rem;
+    }
+    #mini-propaganda > ul > :nth-child(3) > p > span{
+        font-size: 2.3rem;
+    }
+    #carousel-1{
+        margin: 5vh 0px 10vh 0px;
+    }
+    #tit-carousel1{
+        font-size: 1.2rem; 
+    }
+    .tab .tablinks{
+    font-size: .8rem;
+    padding: 8px 20px 8px 6px;
+    }
+    .active{
+        border-right: inset 2px #ff0000;
+    }
+    .tabcontent{
+        width: 313px;
+    }
+    .swiper-slide > span{
+        font-size: 1.3rem;
+    }
+
+    #eventos > #centro{
+        width: 88%;
+    }
+    #titEventos > h2{
+        padding: 0px 3vw;
+        font-size: .8rem;
+    }
+    #carousel-2 {
+        height: 23vh;
+    }
+    #carousel-2 > .swiper-wrapper > .swiper-slide > span{
+        font-size: .9rem;
+    }
+}
+
+@media screen and (max-width: 380px)
+{
+    #mini-propaganda{
+        margin-top: 6vh;
+    }
+    #mini-propaganda > ul{
+        width: 320px;
+    }
+    #mini-propaganda > ul > :nth-child(1){
+        height: 100px;
+        border-radius: 18px 35px 0px 0px;
+    }
+    #mini-propaganda > ul > :nth-child(2){
+        height: 90px;
+        border-radius: 0px 0px 35px 18px;
+    }
+    #mini-propaganda > ul > :nth-child(3){
+        margin-top: 25px;
+    }
+    #mini-propaganda > ul > :nth-child(3) > img{
+        width: 120px; height: 120px;
+    }
+    #mini-propaganda > ul > :nth-child(3) > p{
+        font-size: 1.2rem;
+    }
+    #mini-propaganda > ul > :nth-child(3) > p > span{
+        font-size: 2rem;
+    }
+    #carousel-1{
+        margin: 8vh 0px 15vh 0px;
+    }
+    #tit-carousel1{
+        font-size: 1rem; 
+    }
+    .tab .tablinks{
+    font-size: .7rem;
+    padding: 8px 30px 8px 6px;
+    }
+    .tabcontent{
+        width: 259px;
+    }
+    .swiper-slide > span{
+        font-size: .7rem;
+    }
+
+    #eventos > #centro{
+        width: 88%;
+    }
+    #titEventos > h1{
+        font-size: 1.4rem;
+    }
+    #titEventos > h2{
+        padding: 0px 2vw;
+        font-size: .7rem;
+    }
+    #carousel-2 {
+        height: 22vh;
+        padding: 2vh 1.8vw;
+    }
+    #carousel-2 > .swiper-wrapper > .swiper-slide > span{
+        font-size: .7rem;
+    }
+}
+
+/*de baixa resolução*/
+@media screen and (max-width: 320px)
+{
+    .tabcontent{
+    width: 206px;
+    }
+    .tab .tablinks{
+    font-size: .6rem;
+    padding: 4px 10px;
+    }
+
+    #eventos > #centro{
+        width: 88%;
+    }
+    #titEventos > h1{
+        font-size: 1.3rem;
+    }
+    #titEventos > h2{
+        font-size: .6rem;
+    }
+    #carousel-2 {
+        height: 21vh;
+        padding: 1vh 2vh 1vh 2vh;
+    }
+    #carousel-2 > .swiper-wrapper > .swiper-slide > span{
+        font-size: .6rem;
+    }
+}

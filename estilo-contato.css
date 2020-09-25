@@ -1,0 +1,187 @@
+#card{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    margin-top: 10vh;
+    margin-bottom: 30vh;
+}
+#card #cinema{
+    width: 750px;
+    height: 400px;
+    box-sizing: border-box;
+    background-image: url(img/cinema-contato.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 400px 400px 0px 0px;
+    border: 2px solid rgb(207, 196, 44);
+    border-bottom: none;
+}
+#card #informacoes{
+    background-image: url(img/card-contatopipoca.png);
+    background-repeat: no-repeat;
+    background-size:contain;
+    width: 750px;
+    height: 190px;
+    position: absolute;
+    top: 323px;
+}
+#card #informacoes #titulo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    grid-template-rows: auto auto;
+    margin-top: 3.5vh;
+}
+#card #informacoes #titulo h1{
+    cursor: default;
+    font-family: 'Anton-Regular';
+    font-size: 2rem;
+    color:rgb(0, 0, 0);
+    text-shadow: 1px 1px 2px rgb(207, 196, 44),1px 1px 5px rgb(207, 196, 44,.6);
+    display: inline;
+    margin: 0px 0px 0px 13px;    
+}
+#card #informacoes #titulo img{
+    width: 55px;
+    height: 55px;
+    background-color: rgb(255, 136, 0);
+    border-radius: 50px;
+    padding: 0px;
+}
+#card #informacoes #local{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    margin: 0px;
+}
+#card #informacoes #local li{
+    display: flex;
+    align-items: left;
+    width: 25vw;
+}
+#card #informacoes #local li:nth-child(1){
+    padding-bottom: 5px; margin-bottom: 6px;
+    border-bottom: 1px solid black;
+}
+#card #informacoes #local li p{
+    font-family: 'Oswald-Light';
+    font-size: .9rem;
+    color: rgb(255, 255, 255);
+    padding: 0px;
+    margin: 0px 0px 0px 3vw;
+}
+#card #informacoes #local i{
+    display: flex;
+    align-items: center;
+    color: rgb(255, 136, 0);
+    font-size: 1.5rem;
+}
+#card #informacoes #local li:nth-child(1) i{
+    padding-right: 6px;
+}
+/*---------------------------------------------------------*/
+/*---------------------SEGUNDA COLUNA----------------------*/
+#coluna2{
+    display: grid;
+    grid-template-columns: unset auto;
+    grid-template-areas: "contato mapa";
+    justify-content: space-evenly;
+    align-items: center;
+    margin-bottom: 10vh;
+}
+#contato{
+    grid-area: contato;
+    width: 40vw;
+    background-color: rgb(255, 255, 255);
+    padding: 30px;  
+    border-top: 1px solid rgb(175, 0, 0);
+    box-shadow: 1px 1px 5px rgb(0, 0, 0),-1px -1px 5px rgb(0, 0, 0);
+}
+#contato #campos{
+    padding: 0px;
+    margin: 0px;
+    list-style: none;
+}
+#contato #titulo{
+    cursor: default;
+    font-size: 3rem;
+    font-weight: bold;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-align: center;
+    margin: 0px 0px 5vh 0px;
+}
+#contato #campos li{
+    margin-bottom: 5vh;
+    padding-bottom: 1vw;
+    border-bottom: 1px solid rgb(0, 0, 0);
+}
+#contato #campos li:last-child{
+    border-bottom: none;
+}
+#contato #campos li input{
+    width: 100%;
+    background-color: transparent;
+    color: black;
+    outline: none;/*tira borda azul quando clica*/
+    border: none;
+    display: inline-block;
+    /*box-shadow: 1px 1px 5px rgb(0, 0, 0);*/
+    font-size: 1.2rem;
+}
+#contato #campos li input::placeholder{
+    font-family: 'Oswald-Regular';
+    color: rgb(0, 0, 0);
+    font-size: 1.1rem;
+}
+#contato #campos li textarea{
+    width: 100%;
+    margin: 0px;
+    padding: 5px;
+    box-sizing: border-box;/*para deixar o padding apenas dentro a caixa*/
+}
+#contato #campos li textarea::placeholder{
+    font-family: 'Oswald-Regular';
+    color: rgb(139, 139, 139);
+    font-size: 1rem;
+}
+#bnt{
+    display: flex;
+    justify-content: center;
+    padding: 0px;
+    background: linear-gradient(90deg, rgba(210,91,122,1) 0%, rgba(190,0,255,1) 100%);
+    border-radius: 3px;
+}
+#bnt input{
+    outline: none;/*tira borda azul quando clica*/
+    border: none;
+    font-size: 1.5em;
+    font-family: 'Anton-Regular';
+    color: white;
+    text-shadow: 1px 1px 1px rgb(53, 53, 53);
+    padding: 5px;
+    background: transparent;
+}
+#bnt, #bnt input:hover{
+    cursor: pointer;
+}
+/*---------------MAPA-----------------*/
+#mapa{
+    grid-area: mapa;
+    background-color: rgba(255, 238, 0);
+    padding: 10px;
+    border-radius: 10px;
+}
+#mapa iframe{
+    box-shadow: 1px 1px 5px rgb(139, 132, 31);
+}
+#mapa #titulo{
+    cursor: default;
+    font-size: 3rem;
+    font-weight: bold;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-align: center;
+    margin: 0px 0px 3vh 0px;
+}

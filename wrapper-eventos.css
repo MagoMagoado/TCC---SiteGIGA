@@ -1,0 +1,180 @@
+/*Tamanho de tablets em paisagem*/
+/*min-width -> tudo que for maior que...*/
+@media screen and (max-width: 1024px) and (min-width: 768px) and 
+(orientation:landscape)
+{
+    
+}
+
+/*Tamanho de tablets em paisagem*/
+@media screen and (max-width: 600px) and 
+(orientation:landscape)
+{
+    
+}
+@media screen and (max-width: 920px)
+{
+    #legenda .swiper-slide .titulos h1{
+        font-size: 3rem;
+        padding-left: 10vh;
+    }
+    #legenda .swiper-slide .titulos h2{
+        font-size: .8rem;
+    }
+}
+@media screen and (max-width: 845px)
+{
+    #legenda .swiper-slide .titulos h1{
+        font-size: 2rem;
+        padding-left: 10vh;
+    }
+    #legenda .swiper-slide .titulos h2{
+        font-size: .7rem;
+    }
+    #legenda .swiper-slide .data h1{
+        font-size: 1.1rem;
+    }
+    #legenda .swiper-slide .data p{
+        font-size: .8rem;
+    }
+    #legenda .swiper-slide p{
+        font-size: .9rem;
+    }
+    #legenda .swiper-slide p strong{
+        font-size: .9rem;
+    }
+    #legenda .swiper-slide .fotos div{
+        grid-template-columns: 35% auto;
+    }
+    #legenda .swiper-slide .fotos div h1{
+        font-size: .95rem;
+    }
+    #legenda .swiper-slide .fotos div img{      
+       width: 100%;
+    }
+    #legenda .swiper-slide .fotos div ul li{
+        margin-bottom: 0px;
+        font-size: .8rem;
+    }
+    #legenda .swiper-slide .fotos div ul li strong{
+        font-size: .8rem;
+    }
+}
+
+@media screen and (max-width: 768px)
+{
+    #titulo{
+        font-size: 6rem;
+      }
+    #carrosel{
+        margin: 0px 6vw;
+    }
+    .swiper-container {
+        height: 50vw;
+    }
+    [class^="swiper-button-"] {
+        opacity: 1;
+        visibility: visible;
+        -webkit-transform: translateX(0);
+                transform: translateX(0);
+    }
+}
+
+@media screen and (max-width: 600px)
+{
+    #legenda{
+        width: 95%;
+        height: 48vh;
+        margin-bottom: 12vh;
+    }    
+    #legenda .swiper-slide p{
+        font-size: .8rem;
+    }
+    #legenda .swiper-slide .titulos h1{
+        font-size: 1.5rem;
+    }
+    #legenda .swiper-slide .titulos h2{
+        font-size: .6rem;
+    }
+    #legenda .swiper-slide p{
+        font-size: .7rem;
+    }
+    #legenda .swiper-slide p strong{
+        font-size: .7rem;
+    }
+    #legenda .swiper-slide .fotos div ul li{
+        margin-bottom: 0px;
+        font-size: .7rem;
+    }
+    #legenda .swiper-slide .fotos div ul li strong{
+        font-size: .7rem;
+    }
+}
+
+@media screen and (max-width: 580px)
+{
+    #titulo{
+        font-size: 5rem;
+        margin: 5.5vh 0px;
+    }
+}
+
+@media screen and (max-width: 480px)
+{
+    #titulo{
+        font-size: 4.5rem;
+        margin: 0vh 0px;
+    }
+    #legenda{
+        height: 40vh;
+    }
+    #legenda .swiper-slide .titulos h1{
+        font-size: 2rem;
+        padding-left: 10vh; padding-right: 1vh;
+    }
+    #legenda .swiper-slide .titulos h2{
+        font-size: .6rem;
+      }
+    #legenda .swiper-slide .data h1{
+        font-size: .9rem;
+    }
+    #legenda .swiper-slide .data p{
+        font-size: .7rem;
+    }
+    #legenda .swiper-slide p{
+        font-size: .7rem;
+    }
+}
+
+@media screen and (max-width: 380px)
+{
+    #titulo{
+        font-size: 3.5rem;
+        margin-bottom: 5vh;
+    }
+    #legenda{
+        height: 34vh;
+    }
+    #legenda .swiper-slide .titulos h1{
+        font-size: 1.8rem;
+        padding-left: 5vh;
+    }
+    #legenda .swiper-slide .titulos h2{
+        font-size: .5rem;
+      }
+    #legenda .swiper-slide .data h1{
+        font-size: .8rem;
+    }
+    #legenda .swiper-slide .data p{
+        font-size: .6rem;
+    }
+    #legenda .swiper-slide p{
+        font-size: .59rem;
+    }
+}
+
+/*de baixa resolução*/
+@media screen and (max-width: 320px)
+{
+
+}

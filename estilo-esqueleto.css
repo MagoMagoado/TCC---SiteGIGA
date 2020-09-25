@@ -1,0 +1,312 @@
+/*--------------------------Botão Section-------------------------*/
+header > #section > #hamburgerSection{
+    display: none;
+}
+header > #section a{
+    position: relative;
+    padding: 2px;
+}
+header > #section > a{
+    font-family: Anton-Regular;
+    font-size: 1.8rem;
+    padding: 0px 4px;
+    color: black;
+    background-image: linear-gradient(to top, rgb(194, 185, 64,.4),rgb(255, 255, 255,.5));
+    text-decoration: none;
+    cursor: pointer;
+}
+header > #section > a > span{
+    position: absolute;
+}
+header > #section > a > span:nth-child(1),
+header > #section > a > span:nth-child(3){
+    width: 100%;
+    height: 2px;
+    background-color: black;
+}
+
+header > #section > a > span:nth-child(1){
+    top: 0; left: 0;
+    transform-origin: right;
+}
+header > #section > a > span:nth-child(3){
+    bottom: 0; left: 0;
+    transform-origin: left;
+}
+
+header > #section > a:hover > span:nth-child(1){
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: .6s ease;
+}
+header > #section > a:hover > span:nth-child(3){
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: .6s ease;
+}
+/*parte 2*/
+header > #section > a > span:nth-child(2),
+header > #section > a > span:nth-child(4){
+    width: 2px;
+    height: 100%;
+    background-color: black;
+}
+
+header > #section > a > span:nth-child(2){
+    top: 0; left: 0;
+    transform: scale(0);
+    transform-origin: bottom;
+}
+header > #section > a > span:nth-child(4){
+    bottom: 0; right: 0;
+    transform: scale(0);
+    transform-origin: top;
+}
+
+header > #section > a:hover > span:nth-child(2){
+    transform: scale(1);
+    transform-origin: left;
+    transition: .6s ease;
+}
+header > #section > a:hover > span:nth-child(4){
+    transform: scale(1);
+    transform-origin: right;
+    transition: .6s ease;
+}
+/*---------------------------------------------------------------*/
+
+/*-----------------------------NAV-------------------------------*/
+header > #propaganda > nav > #logo{
+    text-decoration: none;
+    cursor: pointer;
+}
+header > #propaganda > nav > #logo > img{
+    width: 55px;
+    height: 55px;
+    margin-left: 8px;
+    background-color: rgb(255, 166, 0);
+    border-radius: 50px;
+}
+header > #propaganda > nav > #logo > img:hover{
+    animation: logo .2s ease-in forwards;
+}
+@keyframes logo{
+0%{
+    background-color: orange;
+}
+50%{
+    background-color: rgb(255, 217, 0);
+}
+100%{
+    background-color:rgb(255, 238, 0);
+}
+}
+
+header > #propaganda > nav > #logar{
+    display: flex;
+    align-items: center;
+}
+header > #propaganda > nav > #logar > #hamburger{
+    display: none;
+}
+.linkLogin, #logar #user p{
+    font-family: Oswald-ExtraLight;
+    font-size: 1.3rem;
+    padding: 2px;
+    margin: 0px 8px 0px 1vh;
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+}
+.linkLogin:hover{
+    color:  rgb(255, 238, 0);
+}
+#logar #user{
+    position: relative;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    padding-bottom: 5px;
+}
+#logar #user i{
+    color: rgb(255, 255, 255);
+    text-shadow: 1px 1px 4px rgb(0, 0, 0,.5), -1px -1px 4px rgb(0, 0, 0,.5);
+    font-size: 1.4rem;
+}
+#logout{
+    visibility: hidden;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 40px; right: 8px;
+    padding: 2px 3vh;
+    border-radius: 3px;
+    background-color: rgb(255, 238, 0);
+}
+#logar #user #logout i:first-child{
+    color: rgb(255, 238, 0);
+    position: absolute;
+    text-shadow: none;
+    font-size: 1.9rem;
+    top: -10px;
+    right: 8px;
+}
+#logar #user #logout a{
+    text-decoration: none;
+    font-family: Oswald-Light;
+    color: black;
+    font-size: 1.4rem;
+    margin: 0px 0px 0px 3px;
+    text-decoration: none;
+    cursor: pointer;
+}
+#logar #user #logout:hover a, #logar #user #logout:hover i:nth-child(2){
+    color: rgb(180, 12, 12);
+}
+#logar #user:hover #logout{    
+    visibility: visible;
+}
+
+/*---------------------------------------------------------------*/
+
+/*---------------------------FOOTER------------------------------*/
+footer > #col-1, footer > #col-2{
+    padding: 0px;
+    margin: 20px 0px 0px 0px;
+}
+footer > #col-1 > li{
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid black;
+}
+footer > #col-1 > li:nth-child(3){
+    border: none;
+}
+footer > #col-1 > li > p{
+    font-family: 'Oswald-Light';
+    font-size: 1.1rem;
+}
+footer > #col-1 > li:nth-child(1) > div{
+    display: flex;
+    flex-direction: column;
+}
+footer > #col-1 > li:nth-child(1) > div > p{
+    font-family: 'Oswald-Light';
+    font-size: 1.1rem;
+    margin: 0px 0px 8px 0px;
+}
+footer > #col-1 > li:nth-child(1) > i{
+    padding:10px 13px 10px 13px;
+}
+footer > #col-1 > li > i{
+    color:rgb(255, 255, 255);
+    font-size: 1.4rem;
+    padding:10px;
+    height: fit-content;
+    background-color: rgb(0, 0, 0);
+    border-radius: 50px;
+    margin-right: 15px;
+}
+
+footer > #col-2 > #empresa{
+    display: flex;
+    align-items: center;
+}
+footer > #col-2 > #empresa > h2{
+    font-family: 'Anton-Regular';
+    font-size: 1.5rem;
+    text-shadow: 1px 1px 0 rgb(207, 196, 44);
+}
+footer > #col-2 > #empresa > img{
+    width: 60px;
+    height: 60px;
+    margin-right: 15px;
+    background-color: rgb(255, 136, 0);
+    border-radius: 50px;
+}
+footer > #col-2 > #followUs > h2{
+    font-family: 'Oswald-Regular';
+    font-size: 1.3rem;
+}
+footer > #col-2 > #followUs > div{
+    display: flex;
+    padding: 0px;
+}
+footer > #col-2 > #followUs > div > a > i{
+    font-size: 1.5rem;
+    height: fit-content;
+    border-radius: 50px;
+    margin-left: 10px;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+}
+footer > #col-2 > #followUs > div > a:nth-child(1) > i{
+    padding:10px 15px 10px 15px;
+    background-color: rgb(12, 9, 179);
+}
+footer > #col-2 > #followUs > div > a:nth-child(2) > i{
+    padding:10px 12px 10px 12px;
+    background-image: linear-gradient(to right, rgb(190, 0, 255),rgb(236, 28, 226));
+}
+footer > #col-2 > #followUs > div > a:nth-child(3) > i{
+    padding:11px;
+    background-color: rgb(28, 142, 236);
+}
+/*---------------------------------------------------------------*/
+/*-----------------------PAGE NOT FOUND--------------------------*/
+html#NotFound, html#NotFound body{
+    width: 100%;
+    height: 100%;
+    padding: 0%;
+    margin: 0%;
+}
+html#NotFound body{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: rgb(0, 0, 0);
+}
+html#NotFound body #caixa1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+html#NotFound body #caixa1 p{
+    font-size: 2.5rem;
+    font-family: 'Oswald-Bold';
+    padding: 0px;
+    color: white;
+    margin: .5vh 0px;
+}
+html#NotFound body #caixa1 p:nth-child(1){
+    font-size: 4rem;
+    font-family: 'Anton-Regular';
+}
+html#NotFound body #caixa1 p:nth-child(4){
+    font-size: 1.5rem;
+    color: rgb(107, 107, 107);
+}
+html#NotFound body #caixa2{
+    padding: 0px;
+    margin: 0px;
+}
+html#NotFound body #caixa2 img{
+    width: fit-content;
+    height: fit-content;
+}
+@media screen and (max-width: 600px)
+{
+    html#NotFound body #caixa1 p:nth-child(1){
+        font-size: 2.3rem;
+    }
+    html#NotFound body #caixa1 p{
+        font-size: 1rem;
+    }
+    html#NotFound body #caixa1 p:nth-child(4){
+        font-size: .9rem;
+    }
+    html#NotFound body #caixa2 img{
+        transform: scale(.8);
+    }
+}
+/*---------------------------------------------------------------*/

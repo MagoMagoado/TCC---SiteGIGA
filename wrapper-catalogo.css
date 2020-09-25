@@ -1,0 +1,106 @@
+/*Tamanho de tablets em paisagem*/
+/*min-width -> tudo que for maior que...*/
+@media screen and (max-width: 1024px) and (min-width: 768px) and 
+(orientation:landscape)
+{
+    
+}
+
+/*Tamanho de tablets em paisagem*/
+@media screen and (max-width: 600px) and 
+(orientation:landscape)
+{
+}
+
+@media screen and (max-width: 768px)
+{
+    div.card{
+        width: 533px;
+        height: 300px;
+        margin-bottom: 3vh;
+    }
+    div.informacoes > .titulos > .principal > h1{
+        font-size: 1.2rem;
+    }
+    div.informacoes > .titulos > .principal > h2{
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width: 600px)
+{
+    div.card{
+        width: 426px;
+        height: 240px;
+    }
+    div.filtro > h1{
+        font-size: 3rem;
+    }
+    div.informacoes > .titulos > .principal > h1{
+        font-size: 1rem;
+        margin: 1vh 0px;
+    }
+    div.informacoes > .titulos > .principal > h2{
+        font-size: .8rem;
+    }
+}
+
+@media screen and (max-width: 480px)
+{
+    div.card{
+        width: 373px;
+        height: 210px;
+    }
+    div.filtro > h1{
+        font-size: 2.5rem;
+    }
+    div.filtro > i{
+        font-size: 2rem;
+    }
+    #filmes{
+        font-size: 2rem;
+    }
+    div.informacoes > .titulos > .principal > h1{
+        font-size: .9rem;
+        margin: .7vh 0px;
+    }
+    div.informacoes > .titulos > .principal > h2{
+        font-size: .8rem;
+    }
+}
+
+@media screen and (max-width: 380px)
+{
+  div.card{
+        width: 319px;
+        height: 180px;
+    }
+    div.informacoes > .titulos > .principal > h1{
+        font-size: .75rem;
+    }
+    div.informacoes > .titulos > .principal > h2{
+        font-size: .7rem;
+    }   
+}
+
+/*de baixa resolução*/
+@media screen and (max-width: 320px)
+{
+    div.card{
+        width: 266px;
+        height: 150px;
+    }
+    div.filtro > h1{
+        font-size: 1.5rem;
+    }
+    #filmes{
+        font-size: 1.5rem;
+    }
+    div.informacoes > .titulos > .principal > h1{
+        font-size: .65rem;
+        margin: 4.5px 0px;
+    }
+    div.informacoes > .titulos > .principal > h2{
+        font-size: .5rem;
+    }
+}

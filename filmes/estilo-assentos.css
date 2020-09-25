@@ -1,0 +1,209 @@
+#content #filtro{
+    display: none;
+    transition: display .2s ease-out;
+    position: fixed;
+    top: 0px;
+    z-index: 1000;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(22, 22, 22,.7);
+}
+#quadro-assentos{    
+    display: none;
+    transition: display .2s ease-out;
+    grid-area: cadeiras;
+    position: fixed;
+    top: 50%; left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 1001;
+    width: fit-content;/*tamanho do form*/
+    background: linear-gradient(45deg, rgba(97,186,125,1) 0%, rgba(74,124,232,1) 52%, rgba(96,184,128,1) 100%);
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.3),-1px -1px 10px rgba(0, 0, 0, 0.3);
+    padding: 5px 30px 20px 30px;
+    margin: 0px;
+}
+#quadro-assentos #formulario{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: max-content;/*tamanho do conteudo, a linha*/
+    margin: 0px;
+}
+#quadro-assentos #formulario #fechar{
+    align-self: flex-end;
+    padding: 0px;
+    font-size: 3rem;
+    color: rgb(6, 6, 87);
+    text-shadow: 1px 1px 3px rgb(4, 14, 99,.2), -1px -1px 3px rgb(4, 14, 99,.2);
+    transition: transform .3s ease-in-out;
+}
+#quadro-assentos #formulario #fechar:hover{
+    transform: rotate(90deg);
+    cursor: pointer;
+}
+#quadro-assentos #titulo{
+    font-size: 2rem;
+    font-family: Oswald-Medium;
+    color: rgb(0, 0, 0);
+    text-shadow: 1px 1px 3px rgb(26, 68, 160,.2),-1px -1px 3px rgb(26, 68, 160,.2);
+    margin:0px;
+}
+/*------------------TABELA ENVIAR------------------*/
+#quadro-assentos #table-enviar{
+    visibility: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    top: 56%; left: 43%;
+    transform: translate(-50%,-50%);
+    width: 450px;
+    height: 475px;
+    border: 1px solid black;
+    margin: 10px 0px 0px 45px;
+    background-color: #fff;
+}
+#quadro-assentos #table-enviar #close{
+    align-self: flex-end;
+    color: rgb(4, 4, 141);
+    text-shadow: 1px 1px 2px rgba(139, 139, 139, 0.3),-1px -1px 2px rgba(139, 139, 139, 0.3);
+    font-size: 3rem; 
+    margin: 10px 10px 0px 0px;
+    transition: transform .5s ease-out;
+}
+#quadro-assentos #table-enviar #close:hover{
+    transform: rotate(-360deg);
+    cursor: pointer;
+}
+#quadro-assentos #table-enviar p{
+    text-align: center;
+    margin-bottom:1vh;
+    font-size: 2rem;
+    font-family: 'Oswald-Regular';
+}
+#quadro-assentos #table-enviar p:nth-child(2){
+    font-size: 2em;
+    font-family: 'Anton-Regular';
+    color: black;
+    background-color: rgb(245, 241, 241);
+    border: 1px solid rgb(110, 110, 110,.3);
+    text-shadow: 1px 1px 2px rgba(230, 230, 230, 0.9),1px 1px 2px rgba(230, 230, 230, 0.9);
+}
+#quadro-assentos #table-enviar #bntEnviar{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    height: inherit;
+    margin-bottom: 5px;
+}
+#quadro-assentos #table-enviar #bntEnviar #myBtn-enviar{
+    text-decoration: none;
+    background-color: inherit;
+    outline: none;
+    border: none;
+    background: linear-gradient(90deg, rgba(74,124,232,1) 0%, rgba(143,97,186,.9) 100%);
+    font-size: 1.5em;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: #000000;
+    border-radius: 3px;
+    padding: 6px;    
+    cursor: pointer;
+}
+/*-------------------------------------------------*/
+#quadro-assentos #table{
+    position: relative;
+    width: 450px;
+    height: 355px;
+    border: 1px solid black;
+    padding-top: 55px;
+    margin: 10px 0px 0px 0px;
+    background-color: #fff;
+}
+#quadro-assentos .linha{
+    display: flex;
+    align-items: center;
+    padding: 0px 5px 0px 5px;
+    height: 10vh;
+}
+#quadro-assentos .tit-linha{
+    font-size: 2rem;
+    font-weight: bold;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: rgb(7, 24, 175);
+    text-shadow: 1px 1px 2px rgb(27, 27, 196,.2);
+    margin-right: 25px;
+}
+#quadro-assentos div#numeros{
+    border:1px solid;
+}
+#quadro-assentos #numeros p{
+    font-size: 1.5rem;
+    font-weight: bold;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: rgb(3, 24, 216);
+    margin-right: 25px;
+}
+#quadro-assentos .cedula{
+    position: relative;
+    margin: 0px 10px 0px 10px;
+}
+#quadro-assentos .cedula label{
+    position: absolute;
+    top: 0; left: 0;
+}
+#quadro-assentos .cedula label:hover{
+    cursor: pointer;
+}
+/*Precisa ter sua própria classe para tirar o position*/
+#quadro-assentos .cedula-resp{
+    position: relative;
+    margin: 0px 10px 0px 10px;
+}
+#quadro-assentos .images{
+    display: none;
+}
+#quadro-assentos .images:nth-child(1){
+    display: block;
+}
+/*--------------------BOTÃO----------------------*/
+#quadro-assentos div#bnt{
+    display: flex;
+    justify-content: center;
+    margin-top:20px;
+    padding: 0px; 
+}
+#quadro-assentos div#bnt input{
+    background-color: inherit;
+    font-size: 1.5em;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: #808080;
+    border-radius: 3px;
+    padding: 5px;
+}
+/*-----------------------------------------------*/
+#quadro-assentos .primeira::before{
+    content: attr(data-content);
+    position: absolute;
+    top: -65px; left: 0px; 
+    font-size: 2.1rem;
+    font-weight: bold;
+    font-family: 'Anton-Regular';
+    color: rgb(7, 24, 175);
+    text-shadow: 1px 1px 2px rgb(27, 27, 196,.2);
+}
+#quadro-assentos .primeira:last-child::before{
+left: -7px;
+}
+#quadro-assentos .primeira-resp::before{
+    content: attr(data-content);
+    position: absolute;
+    top: -65px; left: 0px; 
+    font-size: 2.1rem;
+    font-weight: bold;
+    font-family: 'Anton-Regular';
+    color: rgb(7, 24, 175);  
+    text-shadow: 1px 1px 2px rgb(27, 27, 196,.2);
+}
+#quadro-assentos .primeira-resp:last-child::before{
+    left: -7px;
+}

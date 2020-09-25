@@ -1,0 +1,237 @@
+
+@media screen and (max-width: 845px){
+    #headerSessões > #banner{
+        width: 75%;
+    }
+    .swiper-container{
+        height: 45vh;
+    }
+    .swiper-container > .swiper-wrapper > .swiper-slide > p{
+        font-size: 1rem;
+    }
+    #resumo > p{
+        font-size: .8rem;
+    }
+    #informacoes > li{
+        font-size: .9rem;
+        padding: .5vh 0px;
+        margin: 0vh .5vw;
+    }
+    #informacoes > li > span{
+        font-size: 1rem;
+    }
+}
+@media screen and (max-width: 700px){
+    #headerSessões > #banner{
+        width: 90%;
+        background-size: cover;
+    }
+    #titulo-filme{
+        font-size: 3.3rem;
+    }
+    .swiper-container{
+        width: 100%;
+        height: 38vh;
+        background-color: rgb(255, 238, 0);
+        border-radius: 0px 0px 10px 10px;
+        padding: 2vw 0px;
+        margin: 0px;
+    }
+    [class^="swiper-button-"] {
+        transform: scale(.8);
+    }
+    
+    #sessoes{
+        margin-bottom: 7vh;
+    }
+}
+@media screen and (max-width: 600px){
+    #headerSessões{
+        flex-direction: row-reverse;
+    }
+    #headerSessões > #banner{
+        position: absolute;
+        top: 45%; left: 50%;
+        transform: translate(-50%,-50%);
+        width: 98%;
+        height: 50vh;
+        border-radius: 10px;
+    }
+    #headerSessões > #propaganda > nav > div > #hamburger{
+        display: inline;
+        color:rgb(255, 238, 0);
+        font-size: 1.5rem;
+        padding: 8px;
+        border: 2px solid rgb(255, 238, 0);
+        border-radius: 2px;
+        margin-right: 15px;
+        cursor: pointer;
+    }
+    #headerSessões > #section{
+        position: fixed;
+        width: 50%;
+        height: 100vh;
+        background-color: rgb(255, 238, 0);
+        border-radius: 30px 0 0 5px;
+        padding-right: 10px;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+    #headerSessões > #section > a{
+        padding-right: 10px;
+        margin-right: 10px;
+        font-size: 1.28rem;
+        transform: skew(-3deg);
+        border-right: none;
+    }
+    header > #section > #hamburgerSection{
+        position: absolute;
+        top: 3px; right: 15px;
+        display: inline;
+        font-size: 2rem;
+        padding: 8px;
+        display: flex;
+        transform: skew(-3deg);
+        border-radius: 2px;
+        cursor: pointer;
+    }
+
+    .hamburger-active{
+        transform: translateX(20px) skew(3deg);
+        transition: transform .5s;
+    }
+    .hamburger-disable{
+        transform: translateX(100vh) skew(3deg);
+    }
+    /*------------------CORPO---------------------*/
+    #mainFilmes{
+        grid-template-columns: 100%;
+        grid-template-areas:
+        'cadeiras'
+        'titulo'
+        'extras'
+        'principal';
+    }
+    #principal{
+        grid-area: principal;
+    }
+    #extras{
+        grid-area: extras;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 5vh;
+    }
+    #titulo-filme{
+        grid-area: titulo;
+        font-size: 4rem;
+        margin-top: 13vh;
+    }
+    #resumo{
+        margin-bottom: 8vh;
+    }
+    #sessoes{
+        margin-bottom: 10vh;
+    }
+    #center{
+        width: 80%;
+    }
+    #titEventos > h1{
+        padding: 0px 8.5vw;
+    }
+    #titEventos > h2{
+        width: 39vw;
+    }
+    .swiper-container:hover .swiper-button-prev,
+    .swiper-container:hover .swiper-button-next {
+        background-color: unset;
+        box-shadow: unset;
+  }
+    #trailer{ 
+        margin: 0px;
+        display: flex;
+        justify-content: center;
+    }
+    #trailer > iframe{
+        width:75vw;
+        height: 46vh;
+    }
+    #informacoes{
+        width:75vw;
+        margin: 2vh 0px 0px 0px;
+    }
+    #informacoes > li > span{
+        font-size: .9rem;
+    }
+    #informacoes > li{
+        font-size: .9rem;
+    }
+}
+@media screen and (max-width: 480px)
+{
+    #titulo-filme{
+        font-size: 3.5rem;
+    }
+    .swiper-container{
+        height: 40vh;
+    }
+    #titEventos > h1{
+        font-size: 2rem;
+    }
+    #titEventos > h2{
+        font-size: .8rem;
+        width: 43vw;
+    }
+}
+@media screen and (max-width: 380px)
+{
+    #titulo-filme{
+        font-size: 3rem;
+    }
+    #trailer > iframe{
+        width:75vw;
+        height: 33vh;
+    }
+    #informacoes > li > span{
+        font-size: .75rem;
+    }
+    #informacoes > li{
+        font-size: .75rem;
+    }
+    #center{
+        width: 90%;
+    }
+    .swiper-container{
+        height: 35vh;
+    }
+    .swiper-container > .swiper-wrapper > .swiper-slide > p{
+        font-size: .9rem;
+    }
+    #resumo > p{
+        font-size: .9rem;
+    }
+}
+/*de baixa resolução*/
+@media screen and (max-width: 320px)
+{
+    #headerSessões > #banner{
+        height: 45vh;
+    }
+    #titulo-filme{
+        font-size: 2.5rem;
+    }
+    #trailer > iframe{
+        width:75vw;
+        height: 26vh;
+    }
+    #informacoes > li > span{
+        font-size: .6rem;
+    }
+    #informacoes > li{
+        font-size: .6rem;
+    }
+    #resumo > p{
+        font-size: .8rem;
+    }
+}

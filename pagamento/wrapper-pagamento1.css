@@ -1,0 +1,128 @@
+/*Tamanho de tablets em paisagem*/
+/*min-width -> tudo que for maior que...*/
+@media screen and (max-width: 1024px) and (min-width: 768px) and 
+(orientation:landscape)
+{
+    
+}
+
+/*Tamanho de tablets em paisagem*/
+@media screen and (max-width: 600px) and 
+(orientation:landscape)
+{
+}
+@media screen and (max-width: 790px)
+{
+    header img{
+        width: 53px;
+        height: 53px;
+    }
+    #etapas ul li span{
+        width: 43px; height: 43px;
+    }
+    #etapas ul li span::before{
+        font-size: 1.2rem;
+    }
+    #coluna1 #cartoes img{
+        max-width: 70px;
+    }
+    #coluna1 #cartoes img:last-child{
+        max-width: 90px;
+    }
+    #coluna2 h1{
+        font-size: .9rem;
+    }
+    #coluna2 p{
+        font-size: .7rem;
+    }
+}
+@media screen and (max-width: 700px)
+{
+    form #campos li input, select{
+        padding: 6px 5px;
+        font-size: .9rem;
+    }
+    form #campos li input:focus{
+        padding: 5px 5px;
+    }
+    #bnt a{
+        font-size: 1em;
+    }
+    #bnt input{
+        font-size: 1em;
+    }
+    #coluna1{
+        justify-content: space-around;
+    }
+    #coluna1 h1{
+        font-size: 1.3rem;
+    }
+    #coluna1 #cartoes img{
+        max-width: 60px;
+    }
+    #coluna1 #cartoes img:last-child{
+        max-width: 80px;
+    }
+    #coluna1 p{
+        font-size: .7rem;
+    }
+    #coluna2 h1{
+        font-size: .8rem;
+    }
+    #coluna2 p{
+        margin:.5vh 0px;
+        font-size: .65rem;
+    }
+}
+@media screen and (max-width: 600px)
+{
+    header img{
+        width: 50px;
+        height: 50px;
+    }
+    #quadro{
+        width: 95vw;
+        height: 85vh;
+    }
+    form #campos li input, select{
+        width: 78%;
+    }
+    form #campos li label{
+        width: 15%;
+    }
+}
+@media screen and (max-width: 500px)
+{
+    form #campos li input, select{
+        font-size: .8rem;
+    }
+    form #campos li label{
+        font-size: 1rem;
+    }
+    #bnt a{
+        font-size: .9em;
+    }
+    #bnt input{
+        font-size: .9em;
+    }
+    #coluna1 #cartoes img{
+        max-width: 50px;
+    }
+    #coluna1 #cartoes img:last-child{
+        max-width: 60px;
+    }
+    #coluna1 p{
+        font-size: .6rem;
+    }
+}
+@media screen and (max-width: 450px)
+{
+    #centro{
+        width: 90%;
+    }
+}
+/*de baixa resolução*/
+@media screen and (max-width: 320px)
+{
+    
+}

@@ -1,0 +1,127 @@
+/*Tamanho de tablets em paisagem*/
+/*min-width -> tudo que for maior que...*/
+@media screen and (max-width: 1024px) and (min-width: 768px) and 
+(orientation:landscape)
+{
+    
+}
+
+/*Tamanho de tablets em paisagem*/
+@media screen and (max-width: 600px) and 
+(orientation:landscape)
+{
+}
+@media screen and (max-width: 950px)
+{
+    .waves{
+        width:100%;
+        height: 130px;
+    }
+    .waves-reverse{
+        width:100%;
+        height: 130px;
+    }
+}
+@media screen and (max-width: 600px)
+{
+    header img{
+        width: 50px;
+        height: 50px;
+    }
+    #titulo{
+        font-size: 2.3rem;
+    }
+    #quadro-login{
+        width: max-content;/*tamanho do conteudo, a linha*/
+        background-color: rgb(0, 0, 0,.7);
+        padding: 28px 30px 35px 30px;
+    }
+    #quadro-login #campos li input{
+        padding: 10px 80px 10px 20px;
+        font-size: 1.1rem;
+    }
+    #bnt input{
+        font-size: 1.3em;
+        padding: 8px;
+    }
+    #form-messages{
+        padding: 1vh 0px;
+    }
+    #form-messages li{
+        font-size: 1.1rem;
+    }
+    .waves{
+        width:100%;
+        height: 100px;
+    }
+    .waves-reverse{
+        width:100%;
+        height: 100px;
+    }
+}
+
+@media screen and (max-width: 480px)
+{
+    header > #propaganda > nav > img{
+        width: 45px;
+        height: 45px;
+    }
+    header h1{
+        font-size: 1.3rem;
+    }
+}
+
+@media screen and (max-width: 380px)
+{
+    #titulo{
+        font-size: 2.2rem;
+        text-shadow: 1px 1px 1px rgb(56, 56, 56);
+    }
+    #quadro-login{
+        width: max-content;/*tamanho do conteudo, a linha*/
+        background-color: rgb(0, 0, 0,.7);
+        padding: 28px 30px 35px 30px;
+    }
+    #quadro-login #campos li input{
+        padding: 10px 60px 10px 20px;
+        font-size: .9rem;
+    }
+    #quadro-login #campos li input::placeholder{
+        font-size: 1rem;
+    }
+    #bnt input{
+        font-size: 1.2em;
+        padding: 7.5px;
+    }
+    #form-messages{
+        padding: 1vh 0px;
+    }
+    #form-messages li{
+        font-size: 1.1rem;
+    }
+    .waves{
+        width:100%;
+        height: 80px;
+    }
+    .waves-reverse{
+        width:100%;
+        height: 80px;
+    }
+}
+
+/*de baixa resolução*/
+@media screen and (max-width: 320px)
+{
+    #quadro-login #campos li input{
+        padding: 10px 45px 10px 20px;
+        font-size: .9rem;
+    }
+    .waves{
+        width:100%;
+        height: 70px;
+    }
+    .waves-reverse{
+        width:100%;
+        height: 70px;
+    }
+}

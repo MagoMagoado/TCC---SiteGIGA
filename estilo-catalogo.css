@@ -1,0 +1,134 @@
+#filmes{
+    font-family: 'Oswald-Regular';
+    text-align: center;
+    font-size: 3rem;
+    color: white;
+    text-shadow: 3px 3px 0 rgb(58, 57, 57);
+    cursor: default;
+    margin: 7vh 0px;
+}
+div#catalogo{
+    /*para ficar sempre no centro*/
+    width: min-content;
+}
+div.card{
+    position: relative;/*para a class 'frente' ser relativo ao card*/
+    width: 640px;
+    height: 360px;
+    margin-bottom: 2vh;
+    background-color: #fff;
+    overflow: hidden;/*esconde as informações*/
+    z-index: 1;
+}
+div.filtro{
+    position: absolute;/*para a class 'informacoes' ser relativo ao card*/
+    padding: 0;
+    margin: 0;
+    width: inherit;
+    height: inherit;
+    background-image: linear-gradient(155deg, rgb(76, 0, 253,.8), rgb(182, 170, 63,.8));
+    display: grid;
+    grid-template-rows: auto auto;
+    grid-template-areas:'info' 'titulo';
+    z-index: 3;
+}
+div.filtro > i{
+    grid-area: info;
+    align-self: baseline;
+    justify-self: flex-end;
+    font-size: 2.5rem;
+    color: yellow;
+    margin: 5px 5px 0px 0px;
+    cursor: pointer;
+    border-radius: 50px;
+}
+div.filtro > i:hover{
+    background-color: rgb(250, 31, 31);
+}
+div.filtro > h1{
+    grid-area: titulo;
+    justify-self: center;
+    font-family: Anton-Regular;
+    color: rgb(0, 0, 0);
+    font-size: 3.5rem;
+    cursor: default;
+}
+div.frente{
+    position: relative;/*para a class 'informacoes' ser relativo ao card*/
+    background-size: cover;
+    padding: 0;
+    margin: 0;
+    width: inherit;
+    height: inherit;
+    z-index: 2;
+}
+div.informacoes{
+    position: absolute;
+    top: 0; left: 0;
+    width: inherit;
+    height: inherit;
+    background-image: linear-gradient(155deg, rgb(76, 0, 253), rgb(182, 170, 63));
+    display: grid;
+    grid-template-columns: 60% 40%;
+    grid-template-areas:'foto sobre';
+    z-index: 4;
+    cursor: default;
+}
+div.informacoes > .foto{
+    grid-area: foto;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 0px 5px 0px 10px;
+    overflow: hidden;
+    cursor: pointer;
+}
+/*tem que ser keyframe, pq o hover da ruim*/
+div.informacoes > .foto:hover{
+    transform: scale(.95);
+    transition: .2s ease-in-out;
+}
+div.informacoes > .titulos{
+    grid-area: sobre;
+    padding-left: 5px;
+    overflow: hidden;
+    background-color: rgb(255, 238, 0);
+}
+div.informacoes > .titulos > .principal{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: inherit;
+    text-shadow: 1px 1px 0 rgb(207, 196, 44);
+}
+div.informacoes > .titulos > i{
+    position: absolute;
+    right: 0;
+    font-size: 2.5rem;
+    margin: 5px 5px 0px 0px;
+    cursor: pointer;
+    border-radius: 50px;
+}
+div.informacoes > .titulos > i:hover{
+    background-color: rgb(255, 0, 0);
+}
+div.informacoes > .titulos > .principal > h1{
+    font-family: 'Anton-Regular';
+    font-size: 1.5rem;
+    margin: 1.25vh 0px;
+    cursor: default;
+}
+div.informacoes > .titulos > .principal > h2{
+    font-family: 'Oswald-Light';
+    font-size: 1.3rem;
+    margin: 0px;
+}
+
+.informacoes-active{
+    transform: translate(0%);
+    transition: transform .4s;
+}
+.informacoes-disable{
+    transform: translate(100%);
+    transition: transform .4s;
+}

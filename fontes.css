@@ -1,0 +1,30 @@
+
+@font-face {
+    font-family: 'Oswald-ExtraLight';
+    src: url(./fontes/Oswald-ExtraLight.ttf) format("truetype");
+}
+@font-face {
+    font-family: 'Oswald-Light';
+    src: url(./fontes/Oswald-Light.ttf) format("truetype");
+}
+@font-face {
+    font-family: 'Oswald-Regular';
+    src: url(./fontes/Oswald-Regular.ttf) format("truetype");
+}
+@font-face {
+    font-family: 'Oswald-Medium';
+    src: url(./fontes/Oswald-Medium.ttf) format("truetype");
+}
+@font-face {
+    font-family: 'Oswald-SemiBold';
+    src: url(./fontes/Oswald-SemiBold.ttf) format("truetype");
+}
+@font-face {
+    font-family: 'Oswald-Bold';
+    src: url(./fontes/Oswald-Bold.ttf) format("truetype");
+}
+
+@font-face {
+    font-family: 'Anton-Regular';
+    src: url(./fontes/Anton-Regular.ttf) format("truetype");
+}

@@ -1,0 +1,183 @@
+#headerSessões{
+    grid-area: header;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(90deg, rgb(76, 0, 253,.8) 0%, rgb(182, 170, 63) 100%);
+}
+#headerSessões > #propaganda{
+    height: max-content;
+    background-image: none;
+}
+#headerSessões > #propaganda > nav{
+    background-color: rgb(53, 53, 53);
+}
+#headerSessões > #section{
+    width: 100%;
+    height: 8vh;
+    justify-content: flex-end;
+}
+/*--------------------------------------------------------*/
+/*----------------------BANNER E NAV----------------------*/
+#headerSessões > #banner{
+    position: absolute;
+    top: 23vh;
+    width: 63%;
+    height: 55vh;    
+    background-repeat: no-repeat;
+    border-radius: 10px;
+    align-self: center;
+}
+#headerSessões > #section > a{
+    padding-right: 10px;
+    margin-right: 10px;
+    font-size: 1.4rem;
+    border-right: 2px solid;
+    background-image: none;
+}
+#headerSessões > #section > a:last-child{
+    border-right: none;
+}
+#headerSessões > #section > a > span{
+    display: none;
+}
+/*--------------------------------------------------------*/
+#principal{
+    grid-area: principal;
+}
+#titulo-filme{
+    grid-area: titulo;
+    font-family: 'Oswald-Bold';
+    text-align: center;
+    font-size: 5rem;
+    color: rgb(255, 217, 0);
+    text-shadow: 2px 2px 0px rgb(190, 0, 255), 3px 3px 3px rgb(255, 0, 242);
+    cursor: default;
+    margin-top: 20vh;
+}
+#resumo{
+    width: 90%;
+    height: fit-content;
+    background-color: rgb(255, 255, 255);
+    border: 3px solid rgb(255, 217, 0);
+    margin-bottom: 13vh;
+    margin-left: auto; margin-right: auto;
+}
+#resumo > p{
+    margin: 0px;
+    padding:1em;
+    font-size: 1rem;
+    text-align: justify;
+    line-height: 1.8;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#sessoes{
+    margin-bottom: 15vh;
+    display: flex;
+    justify-content: center;
+}
+#center{
+    width: 96%;
+    margin: 0px;
+}
+#titEventos{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5px;
+}
+#titEventos > h1{
+  font-size: 2.5rem;
+  border-radius: 10px 0px 0px 0px;
+  font-family: Oswald-Medium;
+  background-color: rgb(255, 238, 0);
+  padding: 0px 6.5vw;
+  margin: 0px;
+}
+#titEventos > h2{
+  font-size: 1rem;
+  font-family: Oswald-ExtraLight;
+  font-style: italic;
+  border-radius: 0px 10px 0px 0px;
+  text-align: center;
+  width: 26.5vw;
+  padding-top: 2.5vh;
+  margin: 0px 0px 0px 5px;
+  background-color: rgb(255, 238, 0);
+}
+.swiper-container{
+    width: 100%;
+    height: 55vh;
+    background-color: rgb(255, 238, 0);
+    border-radius: 0px 0px 10px 10px;
+    padding: 2vw 0px;
+    margin: 0px;
+}
+.swiper-container > .swiper-wrapper > .swiper-slide{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    background: url(img/rolo-filme.png), url(img/rolo-filme.png) right, radial-gradient(circle, rgb(87, 133, 231) 0%, rgba(77,132,218,1) 35%, rgba(97,186,125,1) 100%);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.swiper-container > .swiper-wrapper > .swiper-slide > p{
+    margin: 0px;
+    font-family: 'Anton-Regular';
+    color: rgb(0, 0, 0);
+    font-size: 1.7rem;
+    text-shadow: 1px 1px 1px rgb(255, 255, 255), 2px 2px 3px rgb(117, 11, 11,.9);
+}
+[class^="swiper-button-"] {
+    background-color: rgb(15, 12, 145);
+    box-shadow: .3em 0.1em 1em rgb(8, 7, 100);
+    width: 53px;
+    height: 53px;
+    border-radius: 50px;
+    transition: background-color .3s ease-out;
+  }
+  .swiper-container:hover .swiper-button-prev,
+  .swiper-container:hover .swiper-button-next {
+    background-color: rgb(56, 54, 153);
+    box-shadow: .3em 0.1em 1em rgb(8, 7, 100);
+}
+/*--------------------------------------------------------*/
+/*----------------------ASIDE-----------------------------*/
+#extras{
+    grid-area: extras;    
+}
+#trailer{ 
+    margin-top: 21vh;
+    width: 100%;
+    margin-left: 1vw;
+}
+#trailer > iframe{
+    width: 40vw;
+    height: 36vh;  
+    border: 2px solid rgb(255, 217, 0);
+    box-shadow: 1px 1px 5px rgb(255, 0, 242), -1px -1px 5px rgb(255, 0, 242);
+}
+#informacoes{
+    background-color: rgba(255, 255, 255);
+    list-style: none;
+    margin: 3vh 0px 0px 1.5vh;
+    padding: 0px;
+    width: 90%;
+}
+#informacoes > li{
+    font-style: italic;
+    font-family: 'Oswald-ExtraLight';
+    font-size: 1.1rem;
+    border-bottom:1px solid rgba(54, 54, 54, 0.808);
+    padding: 1vh 0px;
+    margin: 0vh 1vw;
+}
+#informacoes > li > span{
+    font-family: 'Oswald-Light';
+    font-weight: bolder;
+    font-size: 1.1rem;
+}
+#informacoes >li:last-child{
+    border: none;
+}

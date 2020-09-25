@@ -1,0 +1,251 @@
+#titulo{
+  grid-area: titulo;
+  font-family: 'Oswald-Bold';
+  text-align: center;
+  font-size: 7rem;
+  color: rgb(255, 217, 0);
+  text-shadow: 2px 2px 0px rgb(190, 0, 255), 3px 3px 3px rgb(255, 0, 242);
+  cursor: default;
+  margin: 10vh 0px;
+}
+/*-------------------------------------------------------*/
+/*-----------------------CAROUSEL------------------------*/
+[class^="swiper-button-"], .swiper-container-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet, .swiper-container-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet::before {
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
+}
+
+.swiper-container {
+  width: 100%;
+  height: 35vw;
+  -webkit-transition: opacity .6s ease;
+  transition: opacity .6s ease;
+}
+/*.swiper-container.swiper-container-coverflow {
+  padding-top: 2%;
+}*/
+.swiper-container.loading {
+  opacity: 0;
+  visibility: hidden;
+}
+.swiper-container:hover .swiper-button-prev,
+.swiper-container:hover .swiper-button-next {
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+  opacity: 1;
+  visibility: visible;
+}
+
+/*----------------Legendas do carrosel------------------*/
+.swiper-slide {
+  display: flex;
+  background-position: center;
+  background-size: cover;
+}
+.swiper-slide .entity-img {
+  display: none;
+}
+.swiper-slide .content {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  text-align: justify;
+  width: 85%;
+  margin-left: 5vw;
+  margin-bottom: 6vh;
+  color: #fff;
+}
+.swiper-slide .content .textos{
+  width: fit-content;
+  padding: 5px 7px;
+  border-radius: 3px;
+  background-color: rgb(110, 2, 146);
+  box-shadow: 1px 1px 2px rgba(0, 0, 0, .3),-1px -1px 2px rgb(0, 0, 0,.3);
+}
+.swiper-slide .content .textos p {
+  width: fit-content;
+  text-shadow: 1px 1px 5px rgb(0, 0, 0,.7),-1px -1px 5px rgb(0, 0, 0,.7);
+  font-weight: bold;
+  margin: 0px;
+}
+.swiper-slide .content .textos span{
+  line-height: 1.6;
+  text-shadow: 1px 1px 5px rgb(0, 0, 0,.7),-1px -1px 5px rgb(0, 0, 0,.7);
+}
+/*------------------------------------------------------*/
+
+[class^="swiper-button-"] {
+  width: 44px;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.swiper-button-prev {
+  -webkit-transform: translateX(50px);
+          transform: translateX(50px);
+}
+
+.swiper-button-next {
+  -webkit-transform: translateX(-50px);
+          transform: translateX(-50px);
+}
+
+.swiper-container-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet {
+  margin: 0 9px;
+  position: relative;
+  width: 12px;
+  height: 12px;
+  background-color: #fff;
+  opacity: .4;
+}
+.swiper-container-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 18px;
+  height: 18px;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  border: 0px solid #fff;
+  border-radius: 50%;
+}
+.swiper-container-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet:hover, .swiper-container-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet.swiper-pagination-bullet-active {
+  opacity: 1;
+}
+.swiper-container-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet.swiper-pagination-bullet-active::before {
+  border-width: 1px;
+}
+
+@media (max-width: 1180px) {
+  .swiper-slide .content .textos p {
+    font-size: 25px;
+  }
+  .swiper-slide .content .textos span {
+    font-size: 12px;
+  }
+}
+@media (max-width: 1023px) {
+  .swiper-container {
+    height: 40vw;
+  }
+  .swiper-container.swiper-container-coverflow {
+    padding-top: 0;
+  }
+}
+/*-------------------------------------------------------*/
+/*----------------------LEGENDA--------------------------*/
+
+#legenda{
+  width: 85%;
+  height: 60vh;
+  background: rgb(255, 255, 255);
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: 1px 1px .5rem black;
+  margin-top: 6vh;
+  margin-bottom: 15vh;
+}
+#legenda .swiper-slide{
+  display: grid;
+  grid-template-areas: 'titulo' 'data' 'p' 'fotos';  
+  overflow-y: scroll;
+}
+/*-----SCROLL----*/
+#legenda .swiper-slide::-webkit-scrollbar-track{
+	box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	background-color: #F5F5F5;
+	border-radius: 10px;
+}
+#legenda .swiper-slide::-webkit-scrollbar{
+	width: 10px;
+	background-color: #F5F5F5;
+}
+#legenda .swiper-slide::-webkit-scrollbar-thumb{
+  border-radius: 10px;
+  background-color: rgb(255, 0, 242);
+	background-image: -webkit-linear-gradient(45deg,rgba(0, 0, 0, 0.2) 25%, transparent 25%,transparent 50%,rgba(0, 0, 0, 0.2) 50%,rgba(0, 0, 0, 0.2) 75%,transparent 75%,transparent);
+}
+/*---------------*/
+#legenda .swiper-slide .titulos{
+  grid-area: titulo;  
+  justify-self: center;
+  display: flex;
+  height: fit-content;
+}
+#legenda .swiper-slide .titulos h1{
+  font-size: 3.5rem;
+  text-shadow: 1px 1px 5px rgb(190, 190, 190);
+  font-family: 'Oswald-Bold';
+  margin: 0px;
+  padding: 0px 2vh 0px 15vh;
+}
+#legenda .swiper-slide .titulos h2{
+  align-self: flex-end;
+  font-size: .9rem;
+  color: rgb(112, 111, 111);
+  text-shadow: 1px 1px 5px rgb(214, 214, 214);
+  font-family: 'Oswald-ExtraLight';
+  font-style: italic;
+}
+#legenda .swiper-slide .data{
+  grid-area: data;
+  list-style: none;
+  justify-self: self-start;
+  margin: 0px 0px 5px 15px;
+  padding: 0px;
+}
+#legenda .swiper-slide .data li{
+  display: flex;
+}
+#legenda .swiper-slide .data h1{
+  font-size: 1.5rem;
+  text-shadow: 1px 1px 2px rgb(190, 190, 190);
+  font-family: 'Oswald-Regular';
+  margin: 0px;
+}
+#legenda .swiper-slide .data p{
+  align-self: flex-end;
+  font-size: 1rem;
+  color: rgb(0, 0, 0);
+}
+#legenda .swiper-slide p{
+  grid-area: p;
+  line-height: 1.5;
+  margin: 5px 15px;
+  text-align: justify;
+  color: black;
+}
+#legenda .swiper-slide .fotos{
+  margin-left: 15px;
+  margin-bottom: 8px;
+}
+#legenda .swiper-slide .fotos div{
+  display: grid;
+  grid-template-areas: 'titulo titulo' 'foto legenda';
+}
+#legenda .swiper-slide .fotos div h1{
+  grid-area: titulo;
+  font-family: 'Oswald-SemiBold';
+  text-shadow: 1px 1px 1px rgb(190, 190, 190);
+  font-size: 1.5rem;
+}
+#legenda .swiper-slide .fotos div img{
+  grid-area: foto;
+}
+#legenda .swiper-slide .fotos div ul{
+  grid-area: legenda;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  list-style: none;
+  padding:0px;
+}
+#legenda .swiper-slide .fotos div ul li{
+  text-align: justify;
+  width: 93%;
+  margin-bottom: 15px;
+}
+#legenda .swiper-slide .fotos div ul li:nth-child(4){
+  margin-bottom: 5px;
+}

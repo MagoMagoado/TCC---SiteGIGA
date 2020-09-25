@@ -1,0 +1,196 @@
+html,body{
+    width: 100%;
+    height: 100%;
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12pt;
+}
+#content{
+    background-image: url(../img/login.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: grid;
+    overflow: hidden;
+    grid-template-columns: 100%;
+    grid-template-rows: 10vh 70vh 20vh;
+    grid-template-areas: 'header' 'main' 'waves';
+}
+header{
+    grid-area: header;
+    border-right: 10px solid rgb(255, 238, 0);
+    background-color: rgb(0, 0, 0,.7);
+    display: flex;
+    align-items: center;
+}
+header #logo{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    cursor: pointer;
+}
+header h1{
+    margin-left: 10px;
+    font-family: 'Oswald-Regular';
+    font-size: 1.5rem;
+    color:rgb(255, 238, 0);
+    text-shadow: 1px 1px 1px black;
+}
+header img{
+    width: 55px;
+    height: 55px;
+    margin-left: 8px;
+    background-color: rgb(255, 166, 0);
+    border-radius: 50px;
+}
+header img:hover{
+    animation: logo .2s ease-in forwards;
+}
+@keyframes logo{
+0%{
+    background-color: orange;
+}
+50%{
+    background-color: rgb(255, 217, 0);
+}
+100%{
+    background-color:rgb(255, 238, 0);
+}
+}
+#main{
+    grid-area: main;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/*---------------------FORM---------------------------*/
+#quadro-login{
+    width: max-content;/*tamanho do conteudo, a linha*/
+    background-color: rgb(0, 0, 0,.7);
+    padding: 50px;
+}
+#quadro-login #campos{
+    padding: 0px;
+    list-style: none;
+}
+#titulo{
+    color: white;
+    cursor: default;
+    font-size: 3rem;
+    font-weight: bold;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-align: center;
+    margin: 0px;
+}
+li#hr{
+    height: 1px;
+    border-radius: 50px;
+    background: rgb(255, 238, 0);
+}
+#quadro-login #campos li{
+    margin-bottom: 3vh;
+}
+#quadro-login label{
+    display: inline-block;
+    width: 110px;
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: white;
+    margin-right: 5px;
+}
+#quadro-login #campos li input{
+    outline: none;/*tira borda azul quando clica*/
+    border: none;
+    display: inline-block;
+    border-radius: 50px;
+    box-shadow: 1px 1px 5px rgb(0, 0, 0);
+    padding: 13px 130px 13px 20px;
+    font-size: 1.2rem;
+}
+#quadro-login #campos li input::placeholder{
+    font-family: 'Oswald-Regular';
+    color: rgb(0, 0, 0);
+    font-size: 1.1rem;
+}
+#bnt{
+    display: flex;
+    justify-content: center;
+    margin-top:10px;
+    padding: 0px; 
+}
+#bnt input{
+    outline: none;/*tira borda azul quando clica*/
+    border: none;
+    width: 160px;
+    font-size: 1.5em;
+    font-family: 'Anton-Regular';
+    color: white;
+    text-shadow: 1px 1px 0px rgb(105, 105, 105,.6),1px 1px 10px rgb(107, 107, 107,.7);
+    border-radius: 50px;
+    padding: 8px;
+    background: linear-gradient(90deg, rgba(236,30,226,1) 37%, rgba(159,23,204,1) 100%);}
+#bnt input:hover{
+    cursor: pointer;
+}
+#form-messages{
+    background-color: rgb(221, 11, 11,.1);
+    border: 1px solid rgb(185, 16, 16);    
+    padding: 2vh 0px;
+    margin-bottom: 1vh;
+    flex-direction: column;
+    align-items: center;
+    display: none;
+}
+#form-messages li{
+    font-family: 'Oswald-Regular';
+    color: rgb(255, 13, 13);
+    text-shadow: 1px 1px 3px rgb(0, 0, 0);  
+    font-size: 1.3rem;
+    font-weight: bolder;
+    list-style: disc;
+}
+/*---------------------------------------------------*/
+footer{
+    position: relative;
+    grid-area: waves;
+    display: flex;
+    align-items: flex-end;
+}
+.waves{
+    width:100%;
+    height: 143px;
+    background-image: url(../img/wave.png);
+    background-size: cover;
+    animation: animate 8s linear infinite;
+    opacity: 0.9;
+}
+.waves-reverse{
+    position: absolute;
+    bottom: 0; left: 0;
+    width:100%;
+    height: 143px;
+    background-image: url(../img/wave.png);
+    background-size: cover;
+    opacity: 0.4;
+    animation: animate-reverse 8s linear infinite;
+}
+    @keyframes animate{
+        0%{
+            background-position: 0;
+        }
+        100%{
+            background-position-x: 1360px;
+        }
+    }
+    @keyframes animate-reverse{
+        0%{
+            background-position-x: 1360px;
+        }
+        100%{
+            background-position: 0;
+        }
+    }

@@ -1,0 +1,205 @@
+/*Tamanho de tablets em paisagem*/
+/*min-width -> tudo que for maior que...*/
+@media screen and (max-width: 1024px) and (min-width: 768px) and 
+(orientation:landscape)
+{
+    
+}
+
+/*Tamanho de tablets em paisagem*/
+@media screen and (max-width: 600px) and 
+(orientation:landscape)
+{
+}
+
+@media screen and (max-width: 930px)
+{
+    #coluna2{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        margin-bottom: 10vh;
+    }
+    #contato{
+        width: 70vw;
+    }
+    #card{
+        margin-bottom: 15vh;
+    }
+    #contato #campos li:last-child{
+        border-bottom: none;
+        margin-bottom: 2vh;
+    }
+    #mapa{
+        margin: 5vh 0px 10vh 0px;
+    }
+    #mapa iframe{
+        width: 78vw;
+        height: 40vh;
+    }
+}
+
+@media screen and (max-width: 768px)
+{
+    #card #cinema{
+        width: 630px;
+        height: 350px;
+        box-sizing: border-box;
+    }
+    #card #informacoes{
+        width: 630px;
+        top: 285px;
+    }
+    #card #informacoes #titulo{
+        margin-top: 3vh;
+    }
+    #card #informacoes #titulo h1{
+        font-size: 1.5rem;
+    }
+    #card #informacoes #titulo img{
+        width: 40px;
+        height: 40px;
+    }
+    #card #informacoes #local li p{
+        font-size: .8rem;
+    }
+    #card #informacoes #local i{
+        font-size: 1.3rem;
+    }
+}
+
+@media screen and (max-width: 655px)
+{
+    #card #cinema{
+        width: 550px;
+    }
+    #card #informacoes{
+        width: 550px;
+    }
+    #card #informacoes #titulo{
+        margin-top: 2.5vh;
+        margin-bottom: 1vh;
+    }
+    #card #informacoes #titulo h1{
+        font-size: 1.3rem;
+    }
+    #card #informacoes #titulo img{
+        width: 30px;
+        height: 30px;
+    }
+    #card #informacoes #local li{
+    width: 30vw;
+    }
+    #card #informacoes #local li p{
+        font-size: .7rem;
+    }
+    #card #informacoes #local i{
+        font-size: 1rem;
+    }
+    #mapa{
+        margin: 2vh 0px 10vh 0px;
+    }
+}
+
+@media screen and (max-width: 600px)
+{
+    #card{
+        margin-bottom: 23vh;
+    }
+    #card #cinema{
+        width: 460px;
+        height: 260px;
+    }
+    #card #informacoes{
+        width: 460px;
+        height: 165px;
+        background-image: url(img/card-contato.png);
+        background-position: center;
+        background-size: cover;
+        top: 210px;
+    }
+    #card #informacoes #titulo{
+        margin-top: 3vh;
+    }
+    #card #informacoes #titulo h1{
+        font-size: 1.5rem;
+    }
+    #card #informacoes #titulo img{
+        width: 40px;
+        height: 40px;
+    }
+    #card #informacoes #local li p{
+        font-size: .85rem;
+    }
+    #card #informacoes #local li{
+        width: 30vw;
+    }
+}
+
+@media screen and (max-width: 480px)
+{
+    #card #cinema{
+        width: 400px;
+        height: 250px;
+    }
+    #card #informacoes{
+        width: 400px;
+        height: 150px;
+        top: 207px;
+    }
+    #card #informacoes #local li{
+        width: 35vw;
+    }
+    #card #informacoes #local li p{
+        font-size: .75rem;
+    }
+    #mapa #titulo{
+        font-size: 2.5rem;
+    }
+    #contato #titulo{
+        font-size: 2.5rem;
+    }
+}
+
+@media screen and (max-width: 430px){
+    #card #cinema{
+        width: 330px;
+        height: 230px;
+    }
+    #card #informacoes{
+        width: 330px;
+        height: 140px;
+        top: 190px;
+    }
+    #card #informacoes #titulo{
+        margin-bottom: 0px;
+    }
+    #card #informacoes #local li{
+        width: 40vw;
+    }
+    #card #informacoes #titulo img{
+        width: 33px;
+        height: 33px;
+    }
+    #mapa iframe{
+        width: 75vw;
+        height: 30vh;
+    }
+    #card{
+        margin-bottom: 18vh;
+    }
+}
+
+@media screen and (max-width: 380px)
+{
+    #contato #campos li input{
+        font-size: .9rem;
+    }
+}
+
+/*de baixa resolução*/
+@media screen and (max-width: 320px)
+{
+    
+}

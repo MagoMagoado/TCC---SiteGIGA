@@ -1,0 +1,175 @@
+/*Tamanho de tablets em paisagem*/
+/*min-width -> tudo que for maior que...*/
+@media screen and (max-width: 1024px) and (min-width: 768px) and 
+(orientation:landscape)
+{
+    
+}
+
+/*Tamanho de tablets em paisagem*/
+@media screen and (max-width: 600px) and 
+(orientation:landscape)
+{
+}
+@media screen and (max-width: 790px)
+{
+    header img{
+        width: 53px;
+        height: 53px;
+    }
+    #etapas ul li span{
+        width: 43px; height: 43px;
+    }
+    #etapas ul li span::before{
+        font-size: 1.2rem;
+    }
+    #centro{
+        width: 90%;
+    }
+    #confirmacao div:first-child h1{
+        font-size: 1.3rem;
+    }
+    #confirmacao div:first-child p{
+        font-size: .85rem;
+    }
+}
+@media screen and (max-width: 730px)
+{
+    #confirmacao div:first-child{
+        width: 55%;
+    }
+    #confirmacao div:first-child p{
+        font-size: .8rem;
+    }
+    #confirmacao div:first-child p:last-child{
+        font-size: .7rem;
+    }
+    #confirmacao div:last-child h1{
+        font-size: 1rem;
+    }
+    #confirmacao div:last-child p{
+        font-size: 1.2rem;
+    }
+    #detalhes #info #pedido div ul li{
+        font-size: .9rem;
+    }
+    #cartao li div{
+        font-size: .9rem;
+    }
+    #cartao li div:first-child{
+        width: 60%;
+    }
+    #preco li div{
+        font-size: .9rem;
+    }
+    #preco li:last-child div{
+        font-size: 1.1rem;
+    }
+}
+@media screen and (max-width: 600px)
+{
+    header img{
+        width: 50px;
+        height: 50px;
+    }
+    #quadro{
+        width: 95vw;
+        height: 85vh;
+    }
+    #detalhes #info{
+        display: grid;
+        columns: auto auto;
+        grid-template-areas: 'pedido cartao' 'pedido preco';
+        justify-content: unset;
+    }
+    #detalhes #info #pedido{
+        grid-area: pedido;
+        width: 85%;/*tiro 3% para ter espaçamento*/
+    }
+    #cartao{
+        width: 100%;
+        grid-area: cartao;
+    }
+    #cartao li div:first-child{
+        width: 50%;
+    }    
+    #cartao li div img{
+        max-width: 45px;
+    }
+    #preco{
+        grid-area: preco;
+        width: 80%;
+    }
+    #preco li{
+        justify-content: unset;
+    }
+    #preco li div:first-child{
+        width: 50%;
+    }
+}
+@media screen and (max-width: 500px)
+{
+    #confirmacao div:first-child{
+        width: 50%;
+    }
+    #confirmacao div:first-child h1{
+        font-size: 1.1rem;
+    }
+    #confirmacao div:first-child p{
+        font-size: .7rem;
+    }
+    #confirmacao div:first-child p:last-child{
+        font-size: .6rem;
+    }
+    #confirmacao div:first-child p span{
+        font-size: .6rem;
+    }
+    #confirmacao div:last-child p{
+        font-size: 1.1rem;
+    }
+    #confirmacao div:last-child #bnt a{
+        font-size: .8em;
+    }
+    #confirmacao div:last-child #bnt a i{
+        font-size: 1.3rem;
+    }
+}
+@media screen and (max-width: 450px)
+{
+    #quadro{
+        overflow: scroll;
+    }
+    #detalhes #info{
+        columns: auto;
+        grid-template-areas: 'pedido' 'cartao' 'preco';
+        justify-content: unset;
+    }
+    #detalhes #info #pedido{
+        width: 100%;
+    }
+    #cartao{
+        margin: 1vh;
+    }
+    #cartao li div:first-child{
+        width: 45%;
+    }
+    #preco{
+        grid-area: preco;
+        width: 100%;
+        padding: 1vh;
+        background-color: rgb(224, 221, 221);
+        box-sizing: border-box;
+    }
+    #preco li{
+        justify-content: unset;
+    }
+    #preco li div:first-child{
+        width: 45%;
+    }
+}
+
+/*de baixa resolução*/
+@media screen and (max-width: 320px)
+{
+    
+}

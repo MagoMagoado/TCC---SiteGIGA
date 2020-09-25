@@ -1,0 +1,241 @@
+/*Tamanho de tablets em paisagem*/
+/*min-width -> tudo que for maior que...*/
+@media screen and (max-width: 1024px) and (min-width: 768px) and 
+(orientation:landscape)
+{
+    
+}
+
+/*Tamanho de tablets em paisagem*/
+@media screen and (max-width: 600px) and 
+(orientation:landscape)
+{
+}
+@media screen and (max-width: 790px)
+{
+    header img{
+        width: 53px;
+        height: 53px;
+    }
+    #etapas ul li span{
+        width: 43px; height: 43px;
+    }
+    #etapas ul li span::before{
+        font-size: 1.2rem;
+    }
+    form #coluna1 #caixas li i{
+        font-size: 2.5rem;
+    }
+    form #coluna2 #pedido1 div li{
+        font-size: .7rem;
+    }
+    form #coluna2 #pedido1 div li i{
+        font-size: 1rem;
+    }
+    form #coluna2 #pedido1 div li .money{
+        font-size: .8rem;
+    }
+    form #coluna2 #pedido1 div li .assento{
+        font-size: .8rem;
+    }
+    form #coluna2 #pedido2 div li{
+        font-size: .8rem;
+    }
+    form #coluna2 #seguro li #ssl{
+        max-width: 50px;
+        max-height: 41px;
+    }
+    form #coluna2 #seguro li:first-child{
+        font-size: .8rem;
+    }
+    form #coluna2 #seguro li:last-child{
+        font-size: .6rem;
+    }
+    form #coluna2 #seguro li:last-child a{
+        font-size: .6rem;
+    }
+}
+@media screen and (max-width: 700px)
+{
+    form #coluna1 #caixas li{
+        padding: 6px;
+    }
+    form #coluna1 #bnt input{
+        font-size: .9em;
+        padding: 8px;
+    }
+    form #coluna1 #bnt a{
+        font-size: .9em;
+    }
+    form #coluna1 #campos li span{
+        font-size: .7rem;
+    }
+}
+@media screen and (max-width: 600px)
+{
+    header img{
+        width: 50px;
+        height: 50px;
+    }
+    #quadro{
+        width: 95vw;
+        height: 85vh;
+    }
+    form #coluna1 #centro1{
+        width: 90%;
+    }
+    form #coluna1 #campos li input{
+        font-size: .7rem;
+    }
+    form #coluna1 #caixas li i{
+        font-size: 2.2rem;
+    }
+    form #coluna1 #campos li{
+        padding: 5px;
+    }
+    form #coluna1 #campos li:focus-within{
+        padding: 4px;
+    }
+    form #coluna2 #pedido1 div li{
+        font-size: .6rem;
+    }
+    form #coluna2 #pedido1 div li i{
+        font-size: .9rem;
+    }
+    form #coluna2 #pedido1 div li .money{
+        font-size: .7rem;
+    }
+    form #coluna2 #pedido1 div li .assento{
+        font-size: .7rem;
+    }
+    form #coluna2 #pedido2 div li{
+        font-size: .7rem;
+    }
+    form #coluna2 #seguro{
+        margin-top: 1vh;
+    }
+    form #coluna2 #seguro li #ssl{
+        max-width: 45px;
+        max-height: 37px;
+    }
+    form #coluna2 #seguro li:first-child{
+        font-size: .7rem;
+    }
+    form #coluna2 #seguro li:last-child{
+        font-size: .5rem;
+    }
+    form #coluna2 #seguro li:last-child a{
+        font-size: .5rem;
+    }
+}
+@media screen and (max-width: 470px)
+{
+    form #coluna1 #centro1{
+        height: 85%;
+    }
+    form #coluna1 #caixas li i{
+        font-size: 2rem;
+    }
+    form #coluna1 #campos li span{
+        top: -10px;
+    }
+    form #coluna1 #bnt input{
+        font-size: .7em;
+        padding: 5px;
+    }
+    form #coluna1 #bnt a{
+        font-size: .7em;
+    }
+    form #coluna2 h1{
+        font-size: 1.1rem;
+    }
+    form #coluna2 #pedido1 div li{
+        font-size: .5rem;
+    }
+    form #coluna2 #pedido1 div li img{
+        width: 15px; height: 13px;
+    }
+    form #coluna2 #pedido1 div li i{
+        font-size: .8rem;
+    }
+    form #coluna2 #pedido1 div li .money{
+        font-size: .6rem;
+    }
+    form #coluna2 #pedido1 div li .assento{
+        font-size: .6rem;
+    }
+    form #coluna2 #pedido2 div li{
+        font-size: .6rem;
+    }
+    form #coluna2 #seguro li #ssl{
+        max-width: 40px;
+        max-height: 33px;
+    }
+    form #coluna2 #seguro li:first-child{
+        font-size: .6rem;
+    }
+}
+@media screen and (max-width: 450px)
+{
+    #quadro{
+        height: auto;
+        overflow: scroll;
+    }
+    form{
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: auto auto;
+        grid-template-areas: 'coluna1' 'coluna2';
+        width: 100%;
+        height: 70.5vh;
+        border-radius: 0px 0px 18px 18px;
+    }
+    form #coluna1{
+        grid-area: coluna1;
+        height: 45vh;
+        margin-top: 1vh;
+    }
+    form #coluna2{
+        grid-area: coluna2;
+    }
+    form #coluna1 #centro1{
+        height: 100%;
+    }
+    form #coluna1 #caixas li i{
+        font-size: 2.2rem;
+    }
+    form #coluna1 #bnt input{
+        font-size: .8em;
+        padding: 6px;
+    }
+    form #coluna1 #bnt a{
+        font-size: .8em;
+    }
+    form #coluna2 h1{
+        font-size: 1.2rem;
+    }
+    form #coluna2 #pedido1 div li{
+        font-size: .6rem;
+    }
+    form #coluna2 #pedido1 div li i{
+        font-size: .9rem;
+    }
+    form #coluna2 #pedido1 div li .money{
+        font-size: .7rem;
+    }
+    form #coluna2 #pedido1 div li .assento{
+        font-size: .7rem;
+    }
+    form #coluna2 #pedido2 div li{
+        font-size: .7rem;
+    }
+    form #coluna2 #seguro{
+        margin-bottom: 1vh;
+    }
+}
+
+/*de baixa resolução*/
+@media screen and (max-width: 320px)
+{
+    
+}
