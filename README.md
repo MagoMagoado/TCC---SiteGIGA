@@ -1,2 +1,2 @@
-# TCC---SiteGIGA
+# TCC SiteGIGA
 Meu TCC do ensino médio
