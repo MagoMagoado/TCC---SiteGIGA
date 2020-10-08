@@ -55,7 +55,6 @@ function requisicao(){
             if (respostaAjax) {
                 MostrarEscolhas(respostaAjax);
                 Enviar(respostaAjax);
-                ReseteAjax();
             }
         };
     });
@@ -90,16 +89,6 @@ function MostrarEscolhas(obj){
         tabela.style.visibility = 'visible';
     }
 };
-
-function ReseteAjax(){
-    var cadeiras = document.getElementsByName("lugares[]");
-
-    for (i=0; i<cadeiras.length; i++){
-      if(cadeiras[i].checked == true){
-        cadeiras[i].checked = 0;
-      }
-    }
-};
     
 function Enviar(obj){
     //o botão enviar
@@ -130,4 +119,30 @@ function Enviar(obj){
         console.log(obj);*/          
     };
 };
-window.addEventListener('load',requisicao);
+
+function reseteAjax(){
+    var fechar = document.getElementById('fechar');
+    var filtro = document.getElementById('filtro');
+    var cadeiras = document.getElementsByName("lugares[]");
+
+    fechar.addEventListener('click',function(){
+        for (i=0; i<cadeiras.length; i++){
+            if(cadeiras[i].checked == true){
+                cadeiras[i].checked = 0;
+            }
+        }
+    });
+    
+    filtro.addEventListener('click',function(){
+        for (i=0; i<cadeiras.length; i++){
+            if(cadeiras[i].checked == true){
+                cadeiras[i].checked = 0;
+            }
+        }
+    });
+};
+
+window.addEventListener('load', function(){
+    requisicao();
+    reseteAjax();
+});
