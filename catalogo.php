@@ -1,8 +1,8 @@
+<?php session_start();if(isset($_GET['logout'])){unset($_SESSION['logged']);header('Location:index.php', true, 301);}?>
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <?php session_start();
-    
+    <?php
     //destroi a variavel em qualquer pagina que não for a do filme
     unset($_SESSION['lugares']);
     ?>
@@ -54,11 +54,8 @@
                                     <a href='catalogo.php?logout=true'>Sair</a>
                                 </div>
                             </div>";
-                            //se clicar em 'SAIR'...
-                            if (isset($_GET['logout'])) {
-                                unset($_SESSION['logged']);
-                                header('Location:catalogo.php', true, 301);
-                            }
+                            /*se clicar em 'SAIR' - Está lá no topo da página,
+                            location tem que estar primeiro que tudo...*/
                         }
                         ?>
                         <i id ='hamburger' class='fas fa-bars'></i>

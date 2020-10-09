@@ -1,7 +1,7 @@
+<?php session_start();if(isset($_GET['logout'])){unset($_SESSION['logged']);header('Location:../index.php', true, 301);}?>
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <?php session_start();?>
     <title>The Batman | Cinema GIGA</title>
     <meta charset="UTF-8">
     <meta name="author" content="Mago">
@@ -60,14 +60,11 @@
                                 <div id='logout' style='z-index: 1000; border: 2px solid rgb(116, 108, 2,.5);'>
                                     <i class='fas fa-sort-up'></i>                        
                                     <i class='fas fa-sign-out-alt'></i>
-                                    <a href='filme1.php?logout=true'>Sair</a>
+                                    <a href='the-batman.php?logout=true'>Sair</a>
                                 </div>
                             </div>";
-                            //se clicar em 'SAIR'...
-                            if (isset($_GET['logout'])) {
-                                unset($_SESSION['logged']);
-                                header('Location:filme1.php', true, 301);
-                            }
+                            /*se clicar em 'SAIR' - Está lá no topo da página,
+                            location tem que estar primeiro que tudo...*/
                         }
                         ?>
                         <i id ='hamburger' class='fas fa-bars'></i>

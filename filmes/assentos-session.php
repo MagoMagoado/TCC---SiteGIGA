@@ -1,5 +1,4 @@
-<?php 
-    session_start();
+<?php session_start();
 
     $dia = isset($_POST['dia']) ? $_POST['dia'] : '';
     $horario = isset($_POST['horario']) ? $_POST['horario'] : '';

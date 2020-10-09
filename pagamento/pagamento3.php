@@ -1,8 +1,8 @@
+<?php session_start();?>
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <?php session_start();
-
+    <?php
     //se a pessoa não escolheu nenhuma cadeira, ou não está logado
     /*if (!isset($_SESSION['lugares']) || !isset($_SESSION['logged'])){
         header('Location:../error404.html', true, 301);

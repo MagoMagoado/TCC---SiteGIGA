@@ -1,6 +1,4 @@
-<?php
-    //sessão startada
-    session_start();
+<?php session_start();
 
     //pega os dados do JavaScript, do FormData
     $username = isset($_POST['nome']) ? $_POST['nome'] : '';
